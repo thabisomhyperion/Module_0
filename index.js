@@ -8,15 +8,17 @@ More on While loop:
 */
 
 let sum = 0;//global viriable and local variable
+let count = 0
 let number = parseInt(prompt('Enter a number:'));
 
 while( number >= 0){
     sum += number
     number = parseInt(prompt('Enter a number:'));
 
-    if(number == 10){
+    if(count == 3){
       break;
     }
+  count +=1
 }
 
 
