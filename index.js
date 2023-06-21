@@ -10,9 +10,15 @@ More on While loop:
 let sum = 0;//global viriable and local variable
 let number = parseInt(prompt('Enter a number:'));
 do{
-  sum += number
+
+  if( number < 0)
+  {
+    console.log(`The sum is ${sum}`)
+  }else{
+    sum += number
+  }
 }
 while( number >= 0);
 
-console.log(`The sum is ${sum}`)
+
 
