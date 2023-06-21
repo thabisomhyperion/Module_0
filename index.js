@@ -13,13 +13,12 @@ do{
 
   if( number < 0)
   {
-    console.log(`The sum is ${sum}`)
+    break;
   }else{
     sum += number
     number = parseInt(prompt('Enter a number:'));
   }
 }
 while( number >= 0);
-
-
+console.log(`The sum is ${sum}`)
 
