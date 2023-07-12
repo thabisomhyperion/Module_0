@@ -56,9 +56,9 @@ Example of diagram
 @	-> 1
 */
 
-for (let i = 5; i >= 1; i--){
+for (let i = 5; i >= 1; i--) {
 	let charactor = "";
-	for(let j = 1; j <= i; j++){
+	for (let j = 1; j <= i; j++) {
 		charactor = charactor + "@ ";
 	}
 	console.log(charactor)
@@ -68,3 +68,19 @@ for (let i = 5; i >= 1; i--){
 let word = "mom"
 let word2 = "mom"
 */
+
+let sum = 0;
+let numbers = [1, 2, 3, 4, 5];
+let result = 0;
+
+for (let i = 0; i < numbers.length; i++) {
+	sum += numbers[i]
+}
+
+result = sum / numbers.length
+
+console.log(result);
+
+//calculate the ave of the numbers
+
+//sum of all numbers / the number count
