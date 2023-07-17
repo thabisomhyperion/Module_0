@@ -31,4 +31,30 @@ Data Structure:
   > entries(); - Returns all key-value pairs within the map.
 */
 
+let studMarks = new Map();
 
+studMarks.set("John", 56);
+studMarks.set("Lekota", 43);
+studMarks.set("Cristain", 68);
+studMarks.set("Molemo", 60);
+studMarks.set("Honolul", 80);
+studMarks.set("Lekau", 56);
+
+let studNames = ["John", "Lekota", "Cristain", "Molemo", "Honolul", "Lekau"]
+studNames.forEach(function(n) {
+		console.log(n, studMarks.get(n))
+		if (studMarks.get(n) >= 75){
+			console.log("Passed with distinction")
+		}
+		else if (studMarks.get(n) >= 50){
+			console.log("Passed")
+		}
+		else{
+			console.log("Failed")
+		}
+})
+// for(let i in studMarks.keys()){
+// 	console.log(i)
+// }
+// studMarks.clear();
+// console.log(studMarks)
