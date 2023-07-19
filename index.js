@@ -4,34 +4,29 @@ Functions:
  - Problems that functions solve
  - Creating a function
  - calling a function
- - parameters
+ - parameters > variable
  - return type
  - Scope
  - Build in functions
 */
 //creating a function
-function getNumb(){
-	let age;
+function getNumb(msg){
+	//the variable numb is local
+	let numb;
 	do{
-		age = parseInt(prompt("Enter your age: "))
-	}while(isNaN(age));
+		numb = parseInt(prompt(msg));
+	}while(isNaN(numb));
 
-	console.log(age);
+	return numb;
 }
 
+function subtraction(){
+	return numb1 - numb2;
+}
 
-getNumb()
+//console.log(getNumb("Enter your age: "))
+//the variable numb1 is global
+let numb1 = getNumb("Enter the first number: ");
 
-// //
-// let numb1;
-// do{
-// 	numb1 = parseInt(prompt("Enter the first number: "))
-// }while(isNaN(numb1));
-
-// let numb2;
-// do{
-// 	numb2 = parseInt(prompt("Enter the second number: "))
-// }while(isNaN(numb2));
-
-// answer = numb1 - numb2
-// console.log(answer)
+let numb2 = getNumb("Enter the second number: ");
+console.log(subtraction())
