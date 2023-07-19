@@ -10,23 +10,69 @@ Functions:
  - Build in functions
 */
 //creating a function
-function getNumb(msg){
-	//the variable numb is local
-	let numb;
-	do{
-		numb = parseInt(prompt(msg));
-	}while(isNaN(numb));
-
-	return numb;
+// Define functions
+function startEngine() {
+  console.log('Starting the engine...');
+  // Code to start the car's engine
 }
 
-function subtraction(){
-	return numb1 - numb2;
+function accelerate(gear) {
+  console.log('Accelerating in gear ' + gear + '...');
+  // Code to increase the car's speed in the specified gear
 }
 
-//console.log(getNumb("Enter your age: "))
-//the variable numb1 is global
-let numb1 = getNumb("Enter the first number: ");
+function brake() {
+  console.log('Applying the brakes...');
+  // Code to slow down the car
+}
 
-let numb2 = getNumb("Enter the second number: ");
-console.log(subtraction())
+function turn(direction) {
+  console.log('Turning ' + direction + '...');
+  // Code to change the car's direction
+  
+}
+
+function changeGear(gear) {
+  console.log('Changing gear to ' + gear + '...');
+  // Code to change the car's gear
+}
+
+function stopEngine() {
+  console.log('Stopping the engine...');
+  // Code to stop the car's engine
+}
+
+// Main program
+function driveCar() {
+  // Step 1: Start the engine
+  startEngine();
+
+  // Step 2: Change to first gear
+  changeGear(1);
+
+  // Step 3: Accelerate
+  accelerate(1);
+
+  // Step 4: Turn left
+  turn('left');
+
+  // Step 5: Change to second gear
+  changeGear(2);
+
+  // Step 6: Accelerate
+  accelerate(2);
+
+  // Step 7: Turn right
+  turn('right');
+
+  // Step 8: Apply brakes
+  brake();
+
+  // Step 9: Stop the engine
+  stopEngine();
+
+  
+}
+
+// Execute the main program
+driveCar();
