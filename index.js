@@ -38,3 +38,5 @@ let parts = str.split(",");
 
 
 console.log(newStr1)
+console.log(newStr2)
+console.log(parts)
