@@ -31,4 +31,10 @@ let str1 = " Hello World! "
 console.log(str1.trim())
 
 
+let str = "Hello, JavaScript!";
+let newStr1 = str.replace("JavaScript", "Node.js"); 
+let newStr2 = str.replaceAll("l", "L");
+let parts = str.split(","); 
 
+
+console.log()
