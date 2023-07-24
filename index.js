@@ -26,6 +26,9 @@ let joinedString = fruitArray.join("-")
 
 console.log(joinedString)
 
+let str1 = " Hello World! "
+
+console.log(str1.trim())
 
 
 
