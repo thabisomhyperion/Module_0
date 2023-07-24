@@ -24,11 +24,11 @@ let fruits = "apple#banana#orange"
 let fruitArray = fruits.split("#")
 let joinedString = fruitArray.join("-")
 
-console.log(joinedString)
+//console.log(joinedString)
 
 let str1 = " Hello World! "
 
-console.log(str1.trim())
+//console.log(str1.trim())
 
 
 let str = "Hello, JavaScript!";
@@ -37,4 +37,4 @@ let newStr2 = str.replaceAll("l", "L");
 let parts = str.split(","); 
 
 
-console.log()
+console.log(newStr1)
