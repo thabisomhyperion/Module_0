@@ -1,0 +1,30 @@
+/**
+String handling
+*/
+let ourString= "Helo Hello World!"
+
+//let str1 = ["H","e","l"]
+
+
+//console.log(ourString[1])
+//console.log(ourString.charAt(1))
+
+
+//let substring1 = ourString.substring(0,5)
+//let substring2 = ourString.slice(6)
+
+
+//console.log(substring1)
+//console.log(substring2.toLowerCase())
+
+//console.log(ourString.includes("hello"))
+
+let fruits = "apple#banana#orange"
+
+let fruitArray = fruits.split("#")
+
+console.log(fruitArray[0])
+console.log(fruitArray[1])
+
+
+
