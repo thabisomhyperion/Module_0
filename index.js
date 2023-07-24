@@ -22,9 +22,10 @@ let ourString= "Helo Hello World!"
 let fruits = "apple#banana#orange"
 
 let fruitArray = fruits.split("#")
+let joinedString = fruitArray.join("-")
 
-console.log(fruitArray[0])
-console.log(fruitArray[1])
+console.log(joinedString)
+
 
 
 
