@@ -43,8 +43,20 @@ console.log(parts)*/
 
 let str = "Hello, JavaScript";
 let index1 = str.indexOf("J"); // 7
-let index2 = str.lastIndexOf("a"); // 8
+let index2 = str.lastIndexOf("a"); // 10
 let startsWithHello = str.startsWith("Hello"); // true
 let endsWithScript = str.endsWith("Script"); // true
 let includesJava = str.includes("Java"); // true
+
+console.log(index1)
+console.log(index2)
+console.log(startsWithHello)
+
+
+let str4 = "Hello";
+let paddedStart = str4.padStart(8, "-")
+let paddedEnd = str4.padEnd(10, "-"); 
+
+console.log(paddedEnd)
+
 
